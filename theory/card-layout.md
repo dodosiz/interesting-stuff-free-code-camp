@@ -32,3 +32,15 @@ Multiple box-shadows can be created by using commas to separate properties of ea
 ```css
 box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 ```
+
+## Opacity property
+
+Use the opacity property on an element like an image or text to change it's opacity.
+
+```css
+a {
+    opacity: 0.7;
+}
+```
+
+[Back to navigation](../README.md)

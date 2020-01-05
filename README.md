@@ -9,3 +9,5 @@ From Applied Visual Design:
 * [Card layout core principles](./theory/card-layout.md)
 
 * [Color theory](./theory/color-theory.md)
+
+* [Transformations](./theory/transform.md)

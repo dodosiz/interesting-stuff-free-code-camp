@@ -1,4 +1,6 @@
-# Usefull theory from the lessons
+# Interesting stuff from free code camp
+
+I created this repository to share some interesting stuff I find during my lessons in free code camp.
 
 From Basic CSS:
 

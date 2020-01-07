@@ -11,3 +11,5 @@ From Applied Visual Design:
 * [Color theory](./theory/color-theory.md)
 
 * [Transformations](./theory/transform.md)
+
+* [Animations](./theory/animate.md)

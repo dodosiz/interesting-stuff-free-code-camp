@@ -19,4 +19,6 @@ From Applied Visual Design:
 
 From Applied Accessibility:
 
-* [Camper Cat's Blog](./theory/camper-cat.md)
+* [HTML Accessibility](./theory/html-acc.md)
+
+* [CSS Accessibility](./theory/css-acc.md)

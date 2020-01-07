@@ -87,4 +87,24 @@ In CSS animations, the **animation-timing-function** property controls how quick
 
 There are a number of predefined keywords available for popular options. For example, the default value is **ease**, which starts slow, speeds up in the middle, and then slows down again in the end. Other options include **ease-out**, which is quick in the beginning then slows down, **ease-in**, which is slow in the beginning, then speeds up at the end, or **linear**, which applies a constant animation speed throughout.
 
+## The Bezier curve
+
+The last example introduced the **animation-timing-function** property and a few keywords that change the speed of an animation over its duration. CSS offers an option other than keywords that provides even finer control over how the animation plays out, through the use of **Bezier curves**.
+
+In CSS animations, Bezier curves are used with the **cubic-bezier** function. The shape of the curve represents how the animation plays out. The curve lives on a 1 by 1 coordinate system. The X-axis of this coordinate system is the duration of the animation (think of it as a time scale), and the Y-axis is the change in the animation.
+
+The cubic-bezier function consists of four main points that sit on this 1 by 1 grid: p0, p1, p2, and p3. p0 and p3 are set for you - they are the beginning and end points which are always located respectively at the origin (0, 0) and (1, 1). You set the x and y values for the other two points, and where you place them in the grid dictates the shape of the curve for the animation to follow. This is done in CSS by declaring the x and y values of the p1 and p2 "anchor" points in the form: (x1, y1, x2, y2). Pulling it all together, here's an example of a Bezier curve in CSS code:
+
+```css
+animation-timing-function: cubic-bezier(0.25, 0.25, 0.75, 0.75);
+```
+
+In the example above, the x and y values are equivalent for each point (x1 = 0.25 = y1 and x2 = 0.75 = y2), which if you remember from geometry class, results in a line that extends from the origin to point (1, 1). This animation is a linear change of an element during the length of an animation, and is the same as using the **linear** keyword. In other words, it changes at a constant speed.
+
+In general, changing the p1 and p2 anchor points drives the creation of different Bezier curves, which controls how the animation progresses through time. Here's an example of a Bezier curve using values to mimic the ease-out style:
+
+```css
+animation-timing-function: cubic-bezier(0, 0, 0.58, 1);
+```
+
 [Back to navigation](../README.md)
